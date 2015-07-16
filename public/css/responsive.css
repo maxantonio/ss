@@ -1,0 +1,126 @@
+/*------------------------------------------------------------------
+[Responsive @media Stylesheet]
+
+Project:	Ovni HTML5 template
+Version:	1.0
+Last change:	03/12/2014
+Author: Entiri
+-------------------------------------------------------------------*/
+
+
+@media (max-width: 991px) {
+			#header {
+				display: none;
+			}
+			body {
+				padding-top: 60px;
+			}
+			.move {
+				visibility: hidden;
+			}
+      
+.parallax .parallax-text-container-home {
+  padding:100px 0px;
+}
+.color-picker {
+  display:none;
+}
+.page-title-overlay {
+padding: 60px 0px 20px 0px;
+}
+
+}
+
+
+@media (max-width: 768px) {
+
+.page-title-overlay {
+padding: 40px 0px 20px 0px;
+}
+.video-full {
+  top: 100px;
+}
+
+#slider-wrapper {
+  padding-bottom: 80px;
+}
+
+
+.spacer100, .spacer110, .spacer120, .spacer130, .spacer140, .spacer150 {
+  height:80px !important;
+}
+
+
+.main-slider h1, .main-slider-video h1 {
+  font-size:40px !important;
+}
+
+
+.image-bottom {
+  margin-bottom:30px;  
+}
+
+.countdown-wrapper {
+  padding: 100px 0px;
+
+}
+
+.footer .footer-text-left, .footer .footer-text-left p{
+  text-align:center;
+}
+
+.footer .footer-text-right, .footer .footer-text-right p {
+  text-align:center;
+}
+
+.owl-theme .owl-controls .owl-nav .owl-prev {
+  left: -15px;
+}
+
+.owl-theme .owl-controls .owl-nav .owl-next {
+  right: -15px;
+}
+
+} 
+
+
+@media (max-width: 560px) {
+
+
+.main-slider h2, .main-slider-video h2 {
+  font-size:30px !important;
+}
+
+.slider-content p {
+  display:none;
+}
+
+.main-slider .flex-direction-nav a, .projects-slider .flex-control-paging li a, .testimonal-slider .flex-control-paging li a {width: 50px !important; }
+
+
+.logo-cell {
+ display: inline-block;
+ vertical-align: middle; 
+  float: left;
+  width: 100%;
+  text-align: center;
+  margin: 0px auto;
+}
+
+.spacer50, .spacer60, .spacer70, .spacer80, .spacer90, .spacer100, .spacer110, .spacer120, .spacer130, .spacer140, .spacer150 {
+  height:40px !important;
+}
+
+.countdown-wrapper {
+  padding: 50px 0px;
+
+}
+
+.countdown-item {
+  width:60px;
+  height:60px;
+  font-size:30px;
+  line-height:60px;
+}
+
+}

@@ -1,0 +1,6 @@
+.text-theme, .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus, .pagination-2 > .active > a, .pagination-2 > .active > span, .pagination-2 > .active > a:hover, .pagination-2 > .active > span:hover, .pagination-2 > .active > a:focus, .pagination-2 > .active > span:focus, .pagination-2 > li > a:hover, .pagination-2 > li > span:hover, .pagination-2 > li > a:focus, .pagination-2 > li > span:focus, .pagination > li > a:hover, .pagination > li > span:hover, .pagination > li > a:focus, .pagination > li > span:focus, .theme-color, .list-3 li i, .counter-item i, .timer, .counter-item h5 {
+  color:#00b4c9;
+}
+.background-theme, .item-day, .cp-big, .social-4 li a:hover i, .social-6 li a:hover i {
+  background-color:#00b4c9;
+}
