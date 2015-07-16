@@ -88,6 +88,20 @@ end
 
 
 
+# Menu 5
+
+
+get '/:locale/prensa' do
+  @menuNumber = 5
+  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,
+         :descripcionES => 'Descripcion de prensa', :descripcionEN => 'Description TRADUCIRRRR'}
+
+  erb (I18n.locale.to_s+"/vistas/menu-5/prensa").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
+
+end
+
+
+
 # Independientes
 
 
