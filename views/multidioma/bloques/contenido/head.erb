@@ -1,9 +1,20 @@
 <head>
   <!-- Basic Meta Tags -->
   <meta charset="utf-8">
-  <title>Trillion | Thematic HTML5 Theme</title>
-  <meta name="description" content="your description">
-  <meta name="keywords" content="your keywords">
+
+  <% if I18n.locale == :es %>
+
+      <title><%= @data[:tituloES] %> | Santamarina & Steta | Abogados</title>
+
+  <% else %>
+
+      <title><%= @data[:tituloEn] %> | Santamarina & Steta | Lawyers</title>
+
+  <% end%>
+
+
+  <meta name="description" content="Santamarina y Steta : Abogados">
+  <meta name="keywords" content="Santamarina y Steta : Abogados">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!-- Favicon -->
   <link href="/img/favicon.png" rel="icon" type="image/png">
@@ -34,7 +45,7 @@
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,800,300&amp;subset=latin' rel='stylesheet' type='text/css'>
   <!-- Internet Explorer condition - HTML5 shim, for IE6-8 support of HTML5 elements -->
   <!--[if lt IE 9]>
-  <script  href="/http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <script  href="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   <!-- Modernizr js -->
   <script  href="/js/modernizr.js"></script>
