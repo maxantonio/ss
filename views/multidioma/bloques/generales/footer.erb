@@ -1,93 +1,97 @@
-<footer class="footer">
+<footer class="footer"> <!-- footer begings -->
+  <div class="footer-top">
     <div class="container">
- 
-      <div class="row space10"></div>
-      
-      <div class="row">      
-        <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-          <h4><%= I18n.t 'Nosotros' %></h4>
-          
-          <div class="footer-column">
-            <p><%= I18n.t 'nosotros-descripcion' %><br>
-           <br>
-            <a href="https://www.facebook.com/GIS.mx" target="blank_"><i class="fa fa-facebook-square"></i></a>
-            <a href="https://twitter.com/gis_mx" target="blank_"><i class="fa fa-twitter-square"></i></a>
-            <a href="http://www.linkedin.com/company/grupo-industrial-saltillo" target="blank_"><i class="fa fa-linkedin-square"></i></a>
-            </p>
-          </div>  
-        </div> 
-        <div class="hidden-xs col-sm-2 col-md-2 col-lg-2">
-          <h4><%= I18n.t 'negocio2' %></h4>
-          <div class="footer-column">
-<!--             <a href="http://www.cifunsa.com.mx/" target="_blank">Cinfunsa</a><br> -->
-            <a href="http://www.vitromex.com.mx/" target="_blank">Vitromex</a><br>
-            <a href="http://www.calorex.com.mx/" target="_blank">Calorex</a><br>
-             <a href="http://www.fluida.com.mx/" target="_blank">Fluida</a><br>
-            <a href="http://cinsa.com.mx/" target="_blank">Cinsa</a><br>
-            <a href="http://santaanita.com.mx/" target="_blank">Santa Anita</a><br>
-            
-           
-          
-          </div> 
- 
-        </div> 
-        <div class="hidden-xs col-sm-2 col-md-2 col-lg-2">
-          <h4><%= I18n.t 'Trabaja en GIS' %></h4>
-            <div class="footer-column">
-            <p>
-              <a href="http://oportunidades.gis.com.mx/" target="_blank"><%= I18n.t 'Bolsa de trabajo' %></a><br>
-              <a href="<%= ruta_externa %>/etica.php"><%= I18n.t 'Política de empleo' %></a><br>
-              <a href="<%= ruta_externa %>/historia.php"><%= I18n.t 'Historia' %></a><br>
-              <a href="<%= ruta_externa %>/numeros.php"><%= I18n.t 'GIS en números' %></a><br>
-            </p>
-          </div> 
-  
-        </div> 
-        <div class="hidden-xs col-sm-2 col-md-2 col-lg-2">
-          <h4><%= I18n.t 'Políticas' %></h4>
-          <div class="footer-column">
-            <p>
-              <a href="<%= ruta_externa %>/privacidad.php"><%= I18n.t 'Política de Privacidad' %></a><br>
-              <a href="<%= ruta_externa %>/ambiente.php"><%= I18n.t 'Política de Protección al Medio Ambiente' %></a><br>
-              <a href="<%= ruta_externa %>/seguridad.php"><%= I18n.t 'Política de Seguridad y Salud Ocupacional' %></a><br>
-              <a href="<%= ruta_externa %>/etica.php"><%= I18n.t 'Código de Ética' %></a><br>
-              <a href="<%= ruta_externa %>/anomalias.php"><%= I18n.t 'Denuncia anomalias' %></a><br>
-            </p>
-          </div> 
-  
-        </div> 
-        <div class="hidden-xs col-sm-2 col-md-2 col-lg-2">
-          <h4><%= I18n.t 'Inversionistas' %></h4>
-          <div class="footer-column">
-            <p>
-              <a href="/<%= I18n.locale %>/fundamentales"><%= I18n.t 'Fundamentales' %></a><br>
-              <a href="/<%= I18n.locale %>/informes-trimestrales"><%= I18n.t 'Informes trimestrales' %></a><br>
-              <a href="/<%= I18n.locale %>/informes-anuales"><%= I18n.t 'Informes anuales' %></a><br>
-              <a href="/<%= I18n.locale %>/registros-bmv"><%= I18n.t 'Registros BMV' %></a><br>
+      <div class="row">
+        <div class="col-md-2 col-sm-3">
+          <h3 class="footer-title">MÉXICO</h3>
+          <p>Edificio Omega<br>
+            Campos Elíseos 345, Pisos 2, 3 y 11, <br>
+            Chapultepec Polanco 11560 México, DF
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <h3 class="footer-title">MONTERREY </h3>
+          <p>Torre Comercial América<br>
+            Batallón de San Patricio 111, Piso 11, Valle  <br>
+            Oriente 66269 Garza García, NL
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <h3 class="footer-title">TIJUANA </h3>
+          <p>Corporativo Paseo<br>
+            Av. Paseo de los Héroes 10289, Piso 3, Desp. 303, <br>
+            Zona Río 22320 Tijuana, BC
+          </p>
+        </div>
+        <div class="col-md-2 col-sm-3">
+          <h3 class="footer-title">QUERÉTARO </h3>
+          <p>Corporativo Blanco<br>
+            AProlongación Tecnológico 950–B, P. 16,  <br>
+            San Pablo 76159 Querétaro, QT
+          </p>
+        </div>
 
-            </p>
-          </div> 
-            
-        </div> 
-        
-        <div class="space20"></div>
+        <div class="col-md-4 col-sm-3">
+          <ul class="flickr-feed">
+            <li><a href="#"><img src="/img/ss/portada/cu1x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu2x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu3x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu4x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu5x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu6x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu7x72.jpg" alt=""></a></li>
+            <li><a href="#"><img src="/img/ss/portada/cu8x72.jpg" alt=""></a></li>
+          </ul>
+        </div>
       </div>
-      
+      <div class="spacer40"></div>
+      <div class="row">
+        <div class="col-md-6 col-sm-4">
+          <h3 class="footer-title">Destacado</h3>
+          <ul class="tags-ul">
+            <li><a href="#">Reforma Fiscal de 2014</a></li>
+            <li><a href="#">Sector energético</a></li>
+            <li><a href="#">Derechos Humanos</a></li>
+            <li><a href="#">Ley Federal de Competencia Económica </a></li>
+            <li><a href="#">Reforma Telecomunicaciones</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <h3 class="footer-title">Recent comments</h3>
+          <ul class="list-1">
+            <li>Alica Joe on <a href="#">Statistics plan.</a></li>
+            <li>Peter on <a href="#">Webdesign.</a></li>
+            <li>Headhunter on <a href="#">House music.</a></li>
+            <li>Angerfist on <a href="#">Hardcore.</a></li>
+          </ul>
+        </div>
+        <div class="col-md-3 col-sm-4">
+          <h3 class="footer-title">Suscríbase a nuestro boletín </h3>
+          <input type="text" class="form-control form-control-footer-dark" placeholder="email">
+          <div class="spacer15"></div>
+          <button class="btn btn-primary">Subscribir</button>
+        </div>
+
+      </div>
+
     </div>
-    
-    <div class="copyright"> 
-      <div class="container">  
-        
-        <div class="row space10"></div>
-        
-        <div class="row">
-          <div class="col-md-12 center">
-          2015 GIS. <%= I18n.t 'derechos' %> <%= I18n.t 'byirstrat' %> <a href="http://www.irstrat.com" rel="external" class="entiri">IRStrat</a>
-          </div>   
-        </div> 
-  
-        <div class="row space10"></div>
-      
-      </div>  
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="footer-text-left">
+            <a href="#">Inicio</a> |
+            <a href="#">Prensa</a> |
+            <a href="#">Aviso de privacidad</a> |
+            <a href="#">English Version</a>
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="footer-text-right">&copy; 2015 <a href="#">Santamarina y Steta</a>.</p>
+        </div>
+      </div>
     </div>
-  </footer>    
+  </div>
+</footer>

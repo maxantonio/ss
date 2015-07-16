@@ -58,6 +58,8 @@ end
 # Nombres de Menues
 
 
+
+
   $menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5" ]
   $menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
@@ -66,9 +68,12 @@ end
 
 # Menu 1
 
-get '/:locale/perfil' do
-  @data={:tituloES => 'Perfil', :tituloEn => "Profile", :menuNumber => 1}
-  erb (I18n.locale.to_s+"/vistas/menu-1/perfil").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
+
+get '/:locale/acerca_de_nosotros' do
+  @data={:tituloES => 'Acerca de nosotros', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,
+         :descripcionES => 'Descripcion de la pagina', :descripcionEN => 'Description TRADUCIRRRR'}
+
+  erb (I18n.locale.to_s+"/vistas/menu-1/acerca_de_nosotros").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
 end
 
 
