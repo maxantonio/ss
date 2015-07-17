@@ -76,6 +76,13 @@ get '/:locale/acerca_de_nosotros' do
   erb (I18n.locale.to_s+"/vistas/menu-1/acerca_de_nosotros").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
 end
 
+get '/:locale/historia' do
+  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,
+         :descripcionES => 'Descripcion Historia', :descripcionEN => 'Description TRADUCIRRRR'}
+
+  erb (I18n.locale.to_s+"/vistas/menu-1/historia").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
+end
+
 
 
 # Menu 2
