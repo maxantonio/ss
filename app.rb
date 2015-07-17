@@ -36,12 +36,11 @@ end
 
 get '/' do
   @menuNumber = 0
-  @data= {:tituloES => 'Inicio', :tituloEn => 'Home' }
+  @data= {:tituloES => 'Inicio', :tituloEn => 'Home'}
   erb :"es/vistas/independientes/index"
   # erb :"es/vistas/independientes/index", :layout => :"es/layouts/application"
 
 end
-
 
 
 =begin
@@ -54,16 +53,11 @@ end
 =end
 
 
-
 # Nombres de Menues
 
 
-
-
-  $menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5" ]
-  $menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
-
-
+$menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
+$menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
 
 # Menu 1
@@ -84,15 +78,24 @@ get '/:locale/historia' do
 end
 
 
-
 # Menu 2
+
+get '/:locale/areas-y-sectores' do
+  @menuNumber = 2
+  @data = {
+      :tituloES => 'Áreas y Sectores', :tituloEn => 'Areas and sectors', :menuNumber => 2,
+      :descripcionES => 'Más de mil clientes activos nos confían permanentemente sus proyectos y retos, y hemos acompañado a muchos de ellos durante más de sesenta años. Nuestra dedicación y compromiso con la preparación y la especialización continuas nos permiten prestar servicios legales a través de las siguientes prácticas:',
+      :descripcionEN => 'Description TRADUCIRRRR'
+  }
+  erb (I18n.locale.to_s+'/vistas/menu-2/areas-y-sectores').to_sym, :layout => (I18n.locale.to_s+'/layouts/content').to_sym
+
+end
 
 
 # Menu 3
 
 
 # Menu 4
-
 
 
 # Menu 5
@@ -103,19 +106,15 @@ get '/:locale/prensa' do
   @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,
          :descripcionES => 'Descripcion de prensa', :descripcionEN => 'Description TRADUCIRRRR'}
 
-  erb (I18n.locale.to_s+"/vistas/menu-5/prensa").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
+  erb (I18n.locale.to_s+'/vistas/menu-5/prensa').to_sym, :layout => (I18n.locale.to_s+'/layouts/content').to_sym
 
 end
-
 
 
 # Independientes
 
 
-
-
-
-                    # HELPER
+# HELPER
 
 =begin
 
