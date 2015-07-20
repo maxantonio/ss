@@ -1,0 +1,31 @@
+
+
+#acerca_de_nosotros h2 {
+    text-align: center;
+    font-weight: 500;
+}
+
+
+#acerca_de_nosotros h3 {
+    font-weight: 400;
+}
+
+
+#acerca_de_nosotros .client-says .client-name {
+    float: left;
+}
+
+
+#acerca_de_nosotros .client-says {
+    width: 100%;
+}
+
+
+#acerca_de_nosotros .client-says .client-text:after {
+    display: none;
+}
+
+
+#acerca_de_nosotros .services-2 {
+    text-align: left;
+}
