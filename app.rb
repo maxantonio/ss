@@ -64,14 +64,15 @@ $menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
 
 get '/:locale/acerca_de_nosotros' do
-  @data={:tituloES => 'Acerca de nosotros', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,
-         :descripcionES => 'Descripcion de la pagina', :descripcionEN => 'Description TRADUCIRRRR'}
+  @data={:tituloES => 'Acerca de nosotros', :tituloEn => "TRADUCIRRRR", :menuNumber => 1, :submenuTitle => 'Servicios Integrales',:submenuTitleEn =>'Servicios Integrales',
+         :descripcionES => 'Una firma con larga tradición dedicada a la práctica de casi todas las áreas del derecho en diversos ramos, que ofrece servicios integrales a personas físicas, grupos empresariales e instituciones, tanto en el sector privado como en el público y no gubernamental.
+', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+"/vistas/menu-1/acerca_de_nosotros").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
 end
 
 get '/:locale/historia' do
-  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,
+  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,:submenuTitle => '',:submenuTitleEn =>'',
          :descripcionES => 'Descripcion Historia', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+"/vistas/menu-1/historia").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
@@ -83,7 +84,7 @@ end
 get '/:locale/areas-y-sectores' do
   @menuNumber = 2
   @data = {
-      :tituloES => 'Áreas y Sectores', :tituloEn => 'Areas and sectors', :menuNumber => 2,
+      :tituloES => 'Áreas y Sectores', :tituloEn => 'Areas and sectors', :menuNumber => 2,:submenuTitle => '',:submenuTitleEn =>'',
       :descripcionES => 'Más de mil clientes activos nos confían permanentemente sus proyectos y retos, y hemos acompañado a muchos de ellos durante más de sesenta años. Nuestra dedicación y compromiso con la preparación y la especialización continuas nos permiten prestar servicios legales a través de las siguientes prácticas:',
       :descripcionEN => 'Description TRADUCIRRRR'
   }
@@ -103,7 +104,7 @@ end
 
 get '/:locale/prensa' do
   @menuNumber = 5
-  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,
+  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,:submenuTitle => '',:submenuTitleEn =>'',
          :descripcionES => 'Descripcion de prensa', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+'/vistas/menu-5/prensa').to_sym, :layout => (I18n.locale.to_s+'/layouts/content').to_sym

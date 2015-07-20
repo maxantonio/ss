@@ -47,7 +47,17 @@
               <div class="spacer20"></div>
             </div>
             <div class="col-sm-6">
-              <h2 class="color-white text-left">Descripcion</h2>
+              <h2 class="color-white text-left">
+                <% if I18n.locale.to_s == "en" %>
+
+                    <%= @data[:submenuTitleEn] %>
+
+                <% else %>
+
+                    <%= @data[:submenuTitle] %>
+
+                <% end %>
+              </h2>
               <div class="half-dark"></div>
               <div class="spacer30"></div>
 
