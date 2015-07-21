@@ -1,3 +1,32 @@
-#prensa .media-text h4{
+/* ======================= PRENSA ======================= */
+#prensa .media-text h4 {
     text-transform: uppercase;
+}
+
+/* ======================= AREAS Y SECTORES ======================= */
+#areas_y_sectores .blog-boxed img {
+    height: 109px;
+}
+
+#areas_y_sectores .blog-boxed {
+    height: 270px;
+
+}
+
+#areas_y_sectores .media-text{
+    position: relative;
+    height: 60%;
+}
+
+#areas_y_sectores .media-text h4 {
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+}
+
+#areas_y_sectores .blog-boxed:hover img{
+    transform: none;
 }
