@@ -1,4 +1,5 @@
 
+/*acerca_de_nosotros*/
 
 #acerca_de_nosotros h2 {
     text-align: center;
@@ -28,4 +29,14 @@
 
 #acerca_de_nosotros .services-2 {
     text-align: left;
+}
+
+/*index*/
+
+#slide1 {
+    background-color: #1D1C1C !important;
+}
+
+#slide1 h1 {
+   /*font-size: 3.75em;*/
 }
