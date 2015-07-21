@@ -409,7 +409,7 @@ $('.counter-item').appear(function() {
             navButtons: false,
             navStartStop: false,
             skin: 'v5',
-            skinsPath: 'layerslider/skins/'
+            skinsPath: '/layerslider/skins/'
 
     });
 
