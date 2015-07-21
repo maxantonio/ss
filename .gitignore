@@ -9,3 +9,7 @@
 /public/images/lang/*.db
 
 /public/img/nosotros/*.db
+
+/public/img/portada/Thumbs.db
+
+/public/img/slider-main/Thumbs.db
