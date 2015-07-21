@@ -36,28 +36,26 @@ end
 
 get '/' do
   @menuNumber = 0
-  @data= {:tituloES => 'Inicio', :tituloEn => 'Home'}
+  @data= {:tituloES => 'Inicio', :tituloEn => 'Home' }
   erb :"es/vistas/independientes/index"
   # erb :"es/vistas/independientes/index", :layout => :"es/layouts/application"
 
 end
 
 
-=begin
 get '/es' do
   @menuNumber = 0
-  @titulo = "GIS"
+  # @titulo = "SANTAMARINA & STETA"
   @data= {:tituloES => 'Inicio', :tituloEn => 'Home' }
-  erb :"/es/layouts/index", :layout => :"es/layouts/application"
+  erb :"es/vistas/independientes/index"
 end
-=end
 
 
 # Nombres de Menues
 
+  $menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5" ]
+  $menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
-$menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
-$menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
 
 # Menu 1
