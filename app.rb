@@ -70,8 +70,8 @@ get '/:locale/acerca_de_nosotros' do
 end
 
 get '/:locale/historia' do
-  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,:submenuTitle => '',:submenuTitleEn =>'',
-         :descripcionES => 'Descripcion Historia', :descripcionEN => 'Description TRADUCIRRRR'}
+  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,:submenuTitle => '"Más de 60 años de experiencia" ',:submenuTitleEn =>'',
+         :descripcionES => '"SANTAMARINA Y STETA fue constituido en el año de 1947, y es reconocido como uno de los despachos de abogados más prominentes e importantes en México. El personal de nuestras oficinas en las ciudades de México, Monterrey, Tijuana y Querétaro desarrolla su trabajo de manera coordinada, según lo requieran las necesidades de nuestros clientes. "', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+"/vistas/menu-1/historia").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
 end
