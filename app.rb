@@ -104,8 +104,10 @@ end
 
 get '/:locale/prensa' do
   @menuNumber = 5
-  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,:submenuTitle => '',:submenuTitleEn =>'',
-         :descripcionES => 'Descripcion de prensa', :descripcionEN => 'Description TRADUCIRRRR'}
+  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,:submenuTitle => 'Noticias',:submenuTitleEn =>'News',
+         :descripcionES => '“A Mexican starlwart and a full-service firm of considerable established prestige in the market.”
+<br/>-Latin Lawyer- ', :descripcionEN => '“A Mexican starlwart and a full-service firm of considerable established prestige in the market.”
+<br/>-Latin Lawyer- '}
 
   erb (I18n.locale.to_s+'/vistas/menu-5/prensa').to_sym, :layout => (I18n.locale.to_s+'/layouts/content').to_sym
 
