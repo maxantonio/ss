@@ -36,42 +36,41 @@ end
 
 get '/' do
   @menuNumber = 0
-  @data= {:tituloES => 'Inicio', :tituloEn => 'Home'}
+  @data= {:tituloES => 'Inicio', :tituloEn => 'Home' }
   erb :"es/vistas/independientes/index"
   # erb :"es/vistas/independientes/index", :layout => :"es/layouts/application"
 
 end
 
 
-=begin
 get '/es' do
   @menuNumber = 0
-  @titulo = "GIS"
+  # @titulo = "SANTAMARINA & STETA"
   @data= {:tituloES => 'Inicio', :tituloEn => 'Home' }
-  erb :"/es/layouts/index", :layout => :"es/layouts/application"
+  erb :"es/vistas/independientes/index"
 end
-=end
 
 
 # Nombres de Menues
 
+  $menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5" ]
+  $menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
-$menuNamesEn=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
-$menuNamesEs=['menu1', 'menu2', 'menu3', "menu4", "menu5"]
 
 
 # Menu 1
 
 
 get '/:locale/acerca_de_nosotros' do
-  @data={:tituloES => 'Acerca de nosotros', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,
-         :descripcionES => 'Descripcion de la pagina', :descripcionEN => 'Description TRADUCIRRRR'}
+  @data={:tituloES => 'Acerca de nosotros', :tituloEn => "TRADUCIRRRR", :menuNumber => 1, :submenuTitle => 'Servicios Integrales',:submenuTitleEn =>'Servicios Integrales',
+         :descripcionES => 'Una firma con larga tradición dedicada a la práctica de casi todas las áreas del derecho en diversos ramos, que ofrece servicios integrales a personas físicas, grupos empresariales e instituciones, tanto en el sector privado como en el público y no gubernamental.
+', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+"/vistas/menu-1/acerca_de_nosotros").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
 end
 
 get '/:locale/historia' do
-  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,
+  @data={:tituloES => 'Historia', :tituloEn => "TRADUCIRRRR", :menuNumber => 1,:submenuTitle => '',:submenuTitleEn =>'',
          :descripcionES => 'Descripcion Historia', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+"/vistas/menu-1/historia").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
@@ -83,7 +82,7 @@ end
 get '/:locale/areas-y-sectores' do
   @menuNumber = 2
   @data = {
-      :tituloES => 'Áreas y Sectores', :tituloEn => 'Areas and sectors', :menuNumber => 2,
+      :tituloES => 'Áreas y Sectores', :tituloEn => 'Areas and sectors', :menuNumber => 2,:submenuTitle => '',:submenuTitleEn =>'',
       :descripcionES => 'Más de mil clientes activos nos confían permanentemente sus proyectos y retos, y hemos acompañado a muchos de ellos durante más de sesenta años. Nuestra dedicación y compromiso con la preparación y la especialización continuas nos permiten prestar servicios legales a través de las siguientes prácticas:',
       :descripcionEN => 'Description TRADUCIRRRR'
   }
@@ -103,8 +102,10 @@ end
 
 get '/:locale/prensa' do
   @menuNumber = 5
-  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,
-         :descripcionES => 'Descripcion de prensa', :descripcionEN => 'Description TRADUCIRRRR'}
+  @data={:tituloES => 'Prensa', :tituloEn => 'Press', :menuNumber => 5,:submenuTitle => 'Noticias',:submenuTitleEn =>'News',
+         :descripcionES => '“A Mexican starlwart and a full-service firm of considerable established prestige in the market.”
+<br/>-Latin Lawyer- ', :descripcionEN => '“A Mexican starlwart and a full-service firm of considerable established prestige in the market.”
+<br/>-Latin Lawyer- '}
 
   erb (I18n.locale.to_s+'/vistas/menu-5/prensa').to_sym, :layout => (I18n.locale.to_s+'/layouts/content').to_sym
 
