@@ -406,6 +406,8 @@ $('.counter-item').appear(function() {
     $('#layerslider').layerSlider({
             pauseOnHover: false,
             firstLayer: 1,
+            navButtons: false,
+            navStartStop: false,
             skin: 'v5',
             skinsPath: 'layerslider/skins/'
 
