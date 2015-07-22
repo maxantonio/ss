@@ -46,3 +46,16 @@
     color: #dddddd;}
 
 
+
+.btn-black-layout{
+    background-color: #1e1e1e;
+    border-color: #1e1e1e;
+    color: #fff;
+}
+
+
+.btn-black-layout:hover, .btn-black-layout:focus, .btn-black-layout:active, .btn-black-layout.active, .open .dropdown-toggle.btn-black-layout {
+    background-color: #282828;
+    border-color: #282828;
+    color: #fff;
+}
