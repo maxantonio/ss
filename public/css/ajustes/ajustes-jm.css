@@ -1,4 +1,5 @@
 
+/*acerca_de_nosotros*/
 
 #acerca_de_nosotros h2 {
     text-align: center;
@@ -29,3 +30,19 @@
 #acerca_de_nosotros .services-2 {
     text-align: left;
 }
+
+/*index*/
+
+#slide1,#slide2 {
+    background-color: #171516 !important;
+}
+
+
+#areas_y_sectores .blog-boxed {
+    background: none repeat scroll 0 0 #1e1e1e;}
+
+
+#areas_y_sectores .blog-boxed h4 a, #areas_y_sectores .blog-boxed h4 {
+    color: #dddddd;}
+
+
