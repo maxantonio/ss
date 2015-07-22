@@ -1,3 +1,30 @@
-#pag_construccion td{
+#pag_construccion td {
     border: 0px none !important;
+}
+
+@media screen and (max-width: 1200px) {
+    #nav > li > a {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .logo {
+        max-width: 200px !important;;
+    }
+}
+
+.navbar .nav > li > a {
+    font-size: 14px;
+    padding: 0px 2px 0px 0px;
+    font-weight: 500;
+}
+
+.navbar .nav > li > ul > li > a {
+    font-size: 15px;
+    padding: 5px 5px;
 }
