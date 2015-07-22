@@ -21,6 +21,7 @@
 .navbar .nav > li > a {
     font-size: 14px;
     padding: 0px 2px 0px 0px;
+    font-weight: 500;
 }
 
 .navbar .nav > li > ul > li > a {
