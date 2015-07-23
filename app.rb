@@ -116,7 +116,7 @@ end
 
 get '/:locale/construccion' do
   @data={:tituloES => 'En desarrollo ', :tituloEn => "Página en contrucción", :menuNumber => 1, :submenuTitle => 'Página en construcción',:submenuTitleEn =>'',
-         :descripcionES => 'Actualmente la página a la cual usted está intentando acceder, se en cuentra en desarrollo.Mientras tanto usted puede navegar por las páginas que ya estan habilidadas.', :descripcionEN => 'Description TRADUCIRRRR'}
+         :descripcionES => 'Actualmente la página a la cual usted está intentando acceder, se en cuentra en desarrollo. Mientras tanto usted puede navegar por las páginas que ya estan habilidadas.', :descripcionEN => 'Description TRADUCIRRRR'}
 
   erb (I18n.locale.to_s+"/vistas/independientes/pag_construccion").to_sym, :layout => (I18n.locale.to_s+"/layouts/content").to_sym
 end
